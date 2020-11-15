@@ -1,0 +1,27 @@
+{
+  "name": "tictactoeonline",
+  "version": "1.0.0",
+  "description": "Tic Tac Toe written with Express and Vue",
+  "main": "./src/index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node src/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Azullon/TicTacToe.git"
+  },
+  "author": "Azullon",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Azullon/TicTacToe/issues"
+  },
+  "homepage": "https://github.com/Azullon/TicTacToe#readme",
+  "dependencies": {
+    "@types/express": "^4.17.8",
+    "@types/socket.io": "^2.1.11",
+    "express": "^4.17.1",
+    "socket.io": "^3.0.1",
+    "ws": "^7.4.0"
+  }
+}
