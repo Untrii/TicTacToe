@@ -29,7 +29,7 @@ export default {
     }
 
     const nickname = ref('')
-    const isNicknameValid = ref(true)
+    const isNicknameValid = computed(() => nickname.value.trim() != '')
     const isClosing = ref(false)
     const inputClass = computed(() => {
       return 'login__input_' + (isNicknameValid.value ? 'correct' : 'incorrect')
@@ -40,10 +40,7 @@ export default {
     })
 
     function onInput(event) {
-      console.log('input')
       let val = event.target.value
-      if (val.trim() == '') isNicknameValid.value = false
-      else isNicknameValid.value = true
       if (val.length > 20) event.preventDefault()
       else nickname.value = val
     }
