@@ -20,6 +20,11 @@
         {{ getInviteButtonText(user) }}
       </div>
     </div>
+    <div class="lobby__user" v-if="store.lobby.length == 0">
+      <div class="lobby__user-name" style="color:gray">
+        sorry, but there is nobody online...
+      </div>
+    </div>
   </div>
 </template>
 
