@@ -73,7 +73,7 @@ export default {
 @import '../css/variables.scss';
 
 .login {
-  width: 100%;
+  width: calc(100% - 20px);
   max-width: 400px;
   align-self: center;
   text-align: center;
