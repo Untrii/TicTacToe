@@ -42,6 +42,7 @@ export default {
   height: 100vh;
   text-align: center;
   width: 400px;
+  max-width: calc(100vw - 20px);
 
   &__caption {
     font-size: 80px;

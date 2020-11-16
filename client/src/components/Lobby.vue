@@ -13,9 +13,6 @@
         v-if="!store.isRequestSent || store.requestTarget == user.rid"
         class="lobby__invite-button"
         @click="invite(user.rid)"
-        :class="{
-          'lobby__invite-button_visible': user.inviteFor == store.rid,
-        }"
       >
         {{ getInviteButtonText(user) }}
       </div>
@@ -101,6 +98,12 @@ export default {
   &__user:not(:hover) &__invite-button {
     opacity: 0;
     transition: 0.2s;
+  }
+}
+
+@media (hover: none) {
+  .lobby__invite-button {
+    opacity: 1 !important;
   }
 }
 </style>
