@@ -20,7 +20,7 @@ function forward(req, res) {
 
   req.pipe(connector)
 }
-
-app.get(/^((?!socket-io).)*$/s, forward)
+if (process.argv.includes('debug')) app.get(/^((?!socket-io).)*$/s, forward)
+else app.use(express.static('public'))
 
 export default app
