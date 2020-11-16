@@ -1,3 +1,3 @@
 export default {
-  SERVER_PORT: 3001,
+  SERVER_PORT: process.env.PORT || 3001,
 }
