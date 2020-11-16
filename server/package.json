@@ -24,5 +24,8 @@
     "express": "^4.17.1",
     "socket.io": "^3.0.1",
     "ws": "^7.4.0"
+  },
+  "devDependencies": {
+    "fs-extra": "^9.0.1"
   }
 }
