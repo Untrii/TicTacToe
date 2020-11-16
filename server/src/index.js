@@ -6,3 +6,5 @@ import http from 'http'
 const server = http.createServer(httpApp)
 wsApp.init(server)
 server.listen(config.SERVER_PORT)
+
+console.log('OK. Started')
