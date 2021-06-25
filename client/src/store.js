@@ -17,10 +17,13 @@ function getDefaultStore() {
   }
 }
 
-if (!window.__store) window.__store = reactive(getDefaultStore())
+const store = reactive(getDefaultStore())
 
-export default window.__store
+export default store
 
 export function reset() {
-  window.__store = reactive(getDefaultStore())
+  const newStore = getDefaultStore()
+  for (const key in newStore) {
+    store[key] = newStore[key]
+  }
 }
